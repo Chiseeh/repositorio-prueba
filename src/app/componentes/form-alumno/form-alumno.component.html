@@ -1,0 +1,57 @@
+<section>
+  <fieldset>
+
+    <label> Ingrese Run del Alumno</label>
+    <input type="number" [value]="alumno.run" (input)="cambiarRun_Alumno($event)">
+
+  </fieldset>
+
+  <fieldset>
+
+    <label> Ingrese Digito Verificador</label>
+    <input type="text" [value]="alumno.dv" (input)="cambiarDv_Alumno($event)">
+
+  </fieldset>
+
+  <fieldset>
+
+    <label> Ingrese Nombre del Alumno</label>
+    <input type="text" [value]="alumno.nombre" (input)="cambiarNombre_Alumno($event)">
+
+  </fieldset>
+
+  <fieldset>
+
+    <label> Ingrese Apellido del Alumno</label>
+    <input type="text" [value]="alumno.apellido" (input)="cambiarApellido_Alumno($event)">
+
+  </fieldset>
+
+  <fieldset>
+
+    <label> Ingrese Edad del Alumno</label>
+    <input type="number" [value]="alumno.edad" (input)="cambiarEdad_Alumno($event)">
+
+  </fieldset>
+
+ <!-- <fieldset>
+    <label >Selecciona la seccion del alumno</label>
+    <select [value]="alumno.seccion" (change)="cambiarSeccion_Alumno($event)">
+      <option *ngFor="let temporal of alumnos " [value]="temporal">
+        {{temporal}}
+      </option>
+    </select>
+  </fieldset>
+-->
+  <fieldset>
+    <button type="button" (click)="guardarElemento()">Registrar</button>
+  </fieldset>
+
+
+
+
+
+
+
+
+</section>
